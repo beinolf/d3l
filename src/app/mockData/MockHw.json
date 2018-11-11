@@ -1,0 +1,27 @@
+[
+  {
+    "HwNumber" : "11",
+    "HwDesc" : "Page 12-32",
+    "HwDueDate": "01/21/2018"
+  },
+  {
+    "HwNumber" : "12",
+    "HwDesc" : "Page 12-32",
+    "HwDueDate": "02/02/2018"
+  },
+  {
+    "HwNumber" : "13",
+    "HwDesc" : "Page 12-32",
+    "HwDueDate": "02/18/2018"
+  },
+  {
+    "HwNumber" : "14",
+    "HwDesc" : "Page 12-32",
+    "HwDueDate": "02/21/2018"
+  },
+  {
+    "HwNumber" : "15",
+    "HwDesc" : "Page 12-32",
+    "HwDueDate": "03/24/2018"
+  }
+]

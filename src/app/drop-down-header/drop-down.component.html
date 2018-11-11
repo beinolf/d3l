@@ -1,0 +1,22 @@
+<mat-accordion [multi]="true"
+               class="my-headers-align mat-elevation-z2">
+  <mat-expansion-panel *ngFor="let classroom of classes">
+
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+         {{classroom.className}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{classroom.className}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+   <app-hw-panel *ngIf="type === 'Homework'"
+                 [hwDataSource] = hwDataSource>
+   </app-hw-panel>
+   <app-wish-list-panel *ngIf="type === 'WishList'"
+                        [wlDataSource]= wlDataSource>
+   </app-wish-list-panel>
+  </mat-expansion-panel>
+</mat-accordion>
+

@@ -1,0 +1,42 @@
+
+<mat-accordion [multi]="true"
+               class="my-headers-align">
+  <mat-expansion-panel *ngFor="let classroom of classes">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{classroom.className}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{classroom.className}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <app-wish-list-panel [wlDataSource] = wlDataSource></app-wish-list-panel>
+  </mat-expansion-panel>
+</mat-accordion>
+
+
+//
+
+ <mat-tab label="Wishlist">
+    <app-[selector for wishlist] *ngIf="tabGroup.selectedIndex === 2"></app->
+    <mat-panel-title class="mat-elevation-z0">
+      Wishlist
+    </mat-panel-title>
+  </mat-tab>
+
+
+  <mat-tab label="To-Do">
+    <app-[selector for todo] *nfIf="tabGroup.selectedIndex === 3"></app->
+    <mat-panel-title class="mat-elevation-z0">
+      To-do
+    </mat-panel-title>
+  </mat-tab>
+
+
+  <mat-tab label="Messages">
+    <app-[selector for messages] *ngIf="tabGroup.selectedIndex === 4"></app->
+    <mat-panel-title class="mat-elevation-z0">
+      Messages
+    </mat-panel-title>
+  </mat-tab>

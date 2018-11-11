@@ -1,0 +1,16 @@
+<mat-tab-group #tabGroup>
+  <mat-tab label="Home">
+    <app-drop-down *ngIf="tabGroup.selectedIndex === 0"
+                   [type]="'Home'"></app-drop-down>
+  </mat-tab>
+
+  <mat-tab label="Homework">
+    <app-drop-down *ngIf="tabGroup.selectedIndex === 1"
+                   [type]="'Homework'"></app-drop-down>
+  </mat-tab>
+
+  <mat-tab label="Wish List">
+    <app-drop-down *ngIf="tabGroup.selectedIndex === 2"
+                   [type]="'WishList'"></app-drop-down>
+  </mat-tab>
+</mat-tab-group>
