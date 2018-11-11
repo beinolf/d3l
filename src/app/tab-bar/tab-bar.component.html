@@ -1,0 +1,41 @@
+<mat-tab-group #tabGroup>
+
+  <mat-tab label="Home">
+    <app-[selcetor for homepage] *ngIf="tabGroup.selectedIndex === 0"></app->
+    <mat-panel-title class="mat-elevation-z0">
+      Home
+    </mat-panel-title>
+  </mat-tab>
+
+  <mat-tab label="Homework">
+    <app-[selector for homework] *ngIf="tabGroup.selectedIndex === 1"></app->
+    <mat-panel-title class="mat-elevation-z0">
+      Homework
+    </mat-panel-title>
+  </mat-tab>
+
+
+  <mat-tab label="Wishlist">
+    <app-[selector for wishlist] *ngIf="tabGroup.selectedIndex === 2"></app->
+    <mat-panel-title class="mat-elevation-z0">
+      Wishlist
+    </mat-panel-title>
+  </mat-tab>
+
+
+  <mat-tab label="To-Do">
+    <app-[selector for todo] *nfIf="tabGroup.selectedIndex === 3"></app->
+    <mat-panel-title class="mat-elevation-z0">
+      To-do
+    </mat-panel-title>
+  </mat-tab>
+
+
+  <mat-tab label="Messages">
+    <app-[selector for messages] *ngIf="tabGroup.selectedIndex === 4"></app->
+    <mat-panel-title class="mat-elevation-z0">
+      Messages
+    </mat-panel-title>
+  </mat-tab>
+
+</mat-tab-group>
